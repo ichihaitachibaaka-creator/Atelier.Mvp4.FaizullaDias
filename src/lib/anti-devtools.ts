@@ -3,34 +3,6 @@ const isProd = import.meta.env.PROD;
 if (isProd) {
   document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-  document.addEventListener('keydown', (e) => {
-    const key = e.key || '';
-    const ctrl = e.ctrlKey || e.metaKey;
-    const shift = e.shiftKey;
-    const alt = e.altKey;
-
-    if (key === 'F12') {
-      e.preventDefault();
-      return;
-    }
-    if (ctrl && shift && (key === 'I' || key === 'i' || key === 'J' || key === 'j' || key === 'C' || key === 'c')) {
-      e.preventDefault();
-      return;
-    }
-    if (ctrl && key === 'U' || key === 'u') {
-      e.preventDefault();
-      return;
-    }
-    if (ctrl && alt && (key === 'I' || key === 'i')) {
-      e.preventDefault();
-      return;
-    }
-    if (ctrl && shift && (key === 'U' || key === 'u')) {
-      e.preventDefault();
-      return;
-    }
-  });
-
   const debuggerTrap = () => {
     setInterval(() => {
       const before = performance.now();
