@@ -1,0 +1,2 @@
+[functions.generate-pattern]
+verify_jwt = true
