@@ -1,3 +1,3 @@
-# atelier.com
+# Atelier
 
-[![Open in Bolt](https://bolt.new/static/open-in-bolt.svg)](https://bolt.new/~/sb1-vrwzmhvz)
+Параметрический генератор лекал. Точный математический расчёт выкроек по вашим меркам.
